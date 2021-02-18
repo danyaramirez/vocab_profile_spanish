@@ -11,6 +11,7 @@ The code was created in Python 3.8.
 
 The repo includes:
 > A .py file with the code
+
 > A .csv file with the corpus list
 
 # Some recommendations:
