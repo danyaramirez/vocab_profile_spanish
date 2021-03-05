@@ -1,0 +1,11 @@
+Frequency in corpus,Number of tokens per frequency
+1 to 300,82
+301 to 1000,23
+1001 to 2000,8
+2001 to 3000,6
+3001 to 5000,15
+5001 to 10000,12
+10001 to 25000,8
+25001 to 50000,5
+50001 to 100000,16
+100000 and higher,0
