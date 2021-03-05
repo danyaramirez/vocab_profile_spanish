@@ -57,3 +57,36 @@ tk[9] = df.query("freq_order > 100000").count()[0]
 
 # Writing a csv file with all the vocabulary profile for these 9 buckets.
 token_freq.to_csv('freq_profile.csv', index=False, index_label=None)
+
+# Visualizations:
+# (i) pie chart with number of tokens in each frequency range
+
+# Simplify data frame to have only 7 slices in the pie chart
+simple_array = np.array([["1 to 300", 0], ["301 to 1000", 0], ["1001 to 3000" , 0],
+              ["3001 to 5000", 0], ["5001 to 10000", 0], ["10001 to 50000", 0], ["50001 and higher", 0]])
+token_freq_small = pd.DataFrame(simple_array, columns = ['Frequency in corpus', 'Tokens per frequency'])
+
+token_freq_small["Tokens per frequency"][0] = token_freq["Number of tokens per frequency"][0]
+token_freq_small["Tokens per frequency"][1] = token_freq["Number of tokens per frequency"][1]
+token_freq_small["Tokens per frequency"][2] = token_freq["Number of tokens per frequency"][2] +\
+                                              token_freq["Number of tokens per frequency"][3]
+token_freq_small["Tokens per frequency"][3] = token_freq["Number of tokens per frequency"][4]
+token_freq_small["Tokens per frequency"][4] = token_freq["Number of tokens per frequency"][5]
+token_freq_small["Tokens per frequency"][5] = token_freq["Number of tokens per frequency"][6] +\
+                                              token_freq["Number of tokens per frequency"][7]
+token_freq_small["Tokens per frequency"][6] = token_freq["Number of tokens per frequency"][8] +\
+                                              token_freq["Number of tokens per frequency"][9]
+
+# Build pie chart using token_freq_small
+slices = token_freq_small["Tokens per frequency"]
+variables = ["1 to 300", "301 to 1000", "1,001 to 3,000", "3,001 to 5,000",
+             "5,001 to 10,000", "10,001 to 50,000", "50,001 and higher"]
+cols = ['#65C1E8', '#D85B63', '#D680AD','#5C5C5C','#C0BA80','#FDC47D','#EA3B46']
+
+plt.pie(slices,labels=variables,colors=cols,shadow=False, autopct='%1.1f%%', startangle=90)
+plt.title("Percentage of Tokens per Frequency Range")
+plt.show()
+
+# (ii) number of words, lexical variability, lexical density,
+# (iii) word cloud
+
