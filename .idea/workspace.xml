@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e3031d1-4855-4e01-a5e8-cdaf0c549145" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/voc_pro.py" beforeDir="false" afterPath="$PROJECT_DIR$/voc_pro.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +24,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -35,11 +37,5 @@
       <updated>1614193326549</updated>
     </task>
     <servers />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="282" y="178" key="SettingsEditor" timestamp="1614907109176">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="282" y="178" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1614907109176" />
   </component>
 </project>
