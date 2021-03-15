@@ -29,4 +29,4 @@ It creates:
 Make sure the text file is correctly encoded in utf-8.
 
 # Visualization examples:
-![pie_chart_profile](https://user-images.githubusercontent.com/20560202/110121570-8d08f500-7d8c-11eb-86b4-12efdaa88e5b.png)
+
