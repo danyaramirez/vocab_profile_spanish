@@ -92,11 +92,24 @@ plt.title("Tokens in Text per Frequency Range in Spanish ")
 
 plt.show()
 
+# (ii) number of tokens, lexical variability, lexical density
+
+# Import file to calculate lexical density
+category = pd.read_csv("corpus_category.csv", sep=";")
+# Combine category and df
+result = pd.merge(df, category, on="token")
+# Calculate lexical density (number of unique content words)
+density = result.query("cat1 == 'v' or cat1 == 'n' or cat1 == 'j' or cat1 =='r'")
+# Create dataframe for all n of tokens, lex dens, lex var
+info = {'Feature': ["Number of tokens", "Count for lexical variability", "Count for lexical density"], 
+          'Proportion': [df["token"].count(), df["token"].nunique(), density["token"].nunique()]}
+bar_df = pd.DataFrame(data=info)
+
+# Create simple horixontal barplot for n tokens, lex dens, and lex var
+plt.barh(data=bar_df, y="Feature", width="Proportion")
+plt.title("Count of tokens - total, tokens for Lexical Variability, and tokens for Lexical Density in text")
+plt.show();
 
 
-
-
-
-# (ii) number of words, lexical variability, lexical density,
 # (iii) word cloud
 
