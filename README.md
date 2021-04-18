@@ -14,16 +14,20 @@ The repo includes:
 
 > A .csv file with the corpus list
 
+> A .csv file with semantic categorization of corpus tokens
+
+> An example text with fragments of "Cien años de soledad" by Gabriel García Márquez
+
 # Output:
 It creates:
 
 > a dataframe with the details of frequency ranges and number of tokens in that range
 
-> a pie chart with the percentage of the text for each frequency range
+> a tree map with the proportions of the text for each frequency range
 
-> a bar chart that compares number of words in the text, lexical variability and lexical density
+> a bar chart that compares number of words in the text, lexical variability and lexical density (and a dataframe with details)
 
-> a word cloud pointing at the most used words
+> a word cloud pointing at the most used content words
 
 # Some recommendations:
 Make sure the text file is correctly encoded in utf-8.
