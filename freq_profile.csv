@@ -1,9 +1,9 @@
 Frequency in corpus,Number of tokens per frequency
-1 to 300,184
-301 to 1000,33
-1001 to 3000,27
+1 to 300,322
+301 to 1000,61
+1001 to 3000,41
 3001 to 5000,13
-5001 to 10000,17
-10001 to 50000,8
-50001 and higher,2
-Too infrequent proper nouns,7
+5001 to 10000,25
+10001 to 50000,50
+50001 and higher,6
+Too infrequent proper nouns,12
