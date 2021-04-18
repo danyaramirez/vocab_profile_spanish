@@ -29,4 +29,9 @@ It creates:
 Make sure the text file is correctly encoded in utf-8.
 
 # Visualization examples:
+![barchart](https://user-images.githubusercontent.com/20560202/115150264-9ea11600-a035-11eb-8668-81bf6c22e61b.png)
+![treemap](https://user-images.githubusercontent.com/20560202/115150276-a791e780-a035-11eb-9d9a-f9265febd8b1.png)
+![wordcloud](https://user-images.githubusercontent.com/20560202/115150277-ac569b80-a035-11eb-82f7-0f7257149ff3.png)
+
+
 
